@@ -2,11 +2,25 @@ html, body {
     background-color: black;
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure full height */
-    font-family: Arial, sans-serif; /* Optional: Define a font family */
-}
-
-#orange-sidebar {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  #toggle-sidebar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+    background-color: #b06d37;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #orange-sidebar {
     position: fixed;
     width: 5.5rem;
     height: 100%;
@@ -15,8 +29,13 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2; /* Ensure sidebar appears above other content */
-}
+    z-index: 10;
+    transition: transform 0.3s ease;
+  }
+  
+  #orange-sidebar.hidden {
+    transform: translateX(-100%);
+  }
 
 #profile > img {
     margin-top: 5px;
@@ -66,17 +85,23 @@ html, body {
 .background {
     position: absolute;
     top: 0;
-    left: 5.5rem; /* Adjust for sidebar width */
-    width: calc(100% - 5.5rem); /* Adjust width to fit remaining space */
+    left: 0; /* Initially, no margin for sidebar */
+    width: 100%; /* Take full width initially */
     height: 100%;
     background-color: #1E2A3E;
     opacity: 1;
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #1E2A3E 40px), repeating-linear-gradient(#23365655, #233656);
     border-radius: 15px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     z-index: 1; /* Ensure content appears behind sidebar */
+    transition: margin-left 0.3s ease, width 0.3s ease; /* Smooth transition for margin-left and width */
+}
+
+.background.expanded {
+    margin-left: 5.5rem; /* Adjust for sidebar width */
+    width: calc(100% - 5.5rem); /* Adjust width when sidebar is expanded */
 }
 
 .album, .player, .disc ,.up-next,.other{
@@ -312,4 +337,3 @@ html, body {
     padding: 8%;
     transition: 0.5s ease;
   }
-
