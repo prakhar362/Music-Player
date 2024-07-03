@@ -1,3 +1,11 @@
+document.getElementById('toggle-sidebar').addEventListener('click', function () {
+    const sidebar = document.getElementById('orange-sidebar');
+    const background = document.querySelector('.background');
+    sidebar.classList.toggle('hidden');
+    background.classList.toggle('expanded');
+  });
+  
+
 document.addEventListener('DOMContentLoaded', function() {
     const playButtons = document.querySelectorAll('.play-button');
 
