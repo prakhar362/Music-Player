@@ -1,4 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggle-sidebar');
+    const sidebar = document.getElementById('orange-sidebar');
+    const contentArea = document.querySelector('.background');
+
+    toggleButton.addEventListener('click', function() {
+        sidebar.classList.toggle('hidden');
+        contentArea.classList.toggle('expanded');
+        adjustContentWidth(); // Call a function to adjust content area width
+    });
+
+    // Function to adjust content area width based on sidebar visibility
+    function adjustContentWidth() {
+        if (sidebar.classList.contains('hidden')) {
+            // Sidebar is hidden, expand content area
+            contentArea.style.marginLeft = '0';
+            contentArea.style.width = '100%';
+        } else {
+            // Sidebar is visible, leave space for sidebar
+            contentArea.style.marginLeft = '5.5rem';
+            contentArea.style.width = 'calc(100% - 5.5rem)';
+        }
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
     // Retrieve album details from localStorage
     const albumImage = localStorage.getItem('albumImage');
     const albumTitle = localStorage.getItem('albumTitle');
