@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!--SIDEBAR-->
+    <div id="orange-sidebar">
+        <div id="profile">
+            <img src="./images/new2.jpg" alt="">
+        </div>
+        <div class="tags">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+                <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437"/>
+              </svg> <br>FEED</button>
+            <button><img src="https://cdn-icons-png.flaticon.com/512/5978/5978350.png" width="256" height="256" alt="Trending free icon" title="Trending free icon">Trending</button>
+            <button><svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90px" height="90px" viewBox="0 0 408.221 408.221" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M204.11,0C91.388,0,0,91.388,0,204.111c0,112.725,91.388,204.11,204.11,204.11c112.729,0,204.11-91.385,204.11-204.11 C408.221,91.388,316.839,0,204.11,0z M286.547,229.971l-126.368,72.471c-17.003,9.75-30.781,1.763-30.781-17.834V140.012 c0-19.602,13.777-27.575,30.781-17.827l126.368,72.466C303.551,204.403,303.551,220.217,286.547,229.971z"></path> </g> </g> </g></svg><br>PLAY</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg><br>FAV</button>
+            <button><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>Library</button>
+        </div>
+    </div>
+    <!--Cards-->
+    <div role="button" aria-disabled="false" aria-labelledby="card-title-spotify:playlist:37i9dQZF1E4F9p1Si44xY1-2 card-subtitle-spotify:playlist:37i9dQZF1E4F9p1Si44xY1-2" aria-describedby="onClickHintspotify:playlist:37i9dQZF1E4F9p1Si44xY1-2" tabindex="0" class="CardButton-sc-g9vf2u-0 doNNoL"></div>
+
+    <!--Background animation-->
+    <div class="background">
+        <div class="library-body">
+            <div class="playlist-card">
+                <img src="https://play-lh.googleusercontent.com/BRbpz0UfKgS3SqallbU3HE0Ka5bCJQ9EHHLPCZre0X2kKXITNLx3srqbtn8EYNLapYU" class="playlist-image" alt="POP SONGS">
+                <div class="playlist-title">POP</div>
+                <div class="playlist-subtitle">Taylor Swift,Ariana Grande,Chainsmoker</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8402b1b02744f6f1bc2df3a757" class="playlist-image" alt="HINDI SONGS">
+                <div class="playlist-title">HINDI</div>
+                <div class="playlist-subtitle">Arjit Singh,Armaan Malik,Shaan</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i1.sndcdn.com/artworks-000357024117-w812o4-t500x500.jpg" class="playlist-image" alt="BEST OF NCS">
+                <div class="playlist-title">NCS</div>
+                <div class="playlist-subtitle">ALL time Hits</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84ae91c8d2609e9243f609590e" class="playlist-image" alt="PUNJABI MIX">
+                <div class="playlist-title">PUNJABI</div>
+                <div class="playlist-subtitle">Subh,Sidhhu Mossewala,Honey Singh</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiKzRcrxpotTPFrHqhhQNv37A5Xk_1clCR9w&s" class="playlist-image" alt="LATE 80s">
+                <div class="playlist-title">LATE 80s</div>
+                <div class="playlist-subtitle">kishore Kumar,Lata Mangeshkar,Udit Narayan</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsagQ3osFWqMcBRetdK-hPoPjdkh4G7ddLw&s" class="playlist-image" alt="MIX PLAYLIST">
+                <div class="playlist-title">Party</div>
+                <div class="playlist-subtitle">Selena,Beyonce,Justin,Marshmello</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9fRUQkQYZzH1Bh5IKcKc5ZKUesoJV1kXJYg&s" class="playlist-image" alt="RUSSIAN SONGS">
+                <div class="playlist-title">RUSSIAN SONGS</div>
+                <div class="playlist-subtitle">A collection of popular Russian songs.</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToOwB5SokhB5YegrF_3_B70PfFYH0CB3iAWQ&s" class="playlist-image" alt="PODCASTS">
+                <div class="playlist-title">PODCASTS</div>
+                <div class="playlist-subtitle">A variety of engaging podcasts.</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi0dgExhNkEtbvicVHeFyokisxJwOPxMZ18g&s" class="playlist-image" alt="ANUV JAIN MIX">
+                <div class="playlist-title">ANUV JAIN MIX</div>
+                <div class="playlist-subtitle">Best of Anuv Jain songs.</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYZSLzqwWGJAeUqCYipxgsEW5-p6JYKq6dw&s" class="playlist-image" alt="SPANISH">
+                <div class="playlist-title">SPANISH</div>
+                <div class="playlist-subtitle">Luis Fonsi,Drake,Bad Bunny,Daddy Yankee</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://i.scdn.co/image/ab67706f0000000241e48711ca5b5e10b4bef78a" class="playlist-image" alt="2010s MIX">
+                <div class="playlist-title">2010s MIX</div>
+                <div class="playlist-subtitle">Popular songs from the 2010s.</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwy5CRsnBbOWbqKezGI_tfqljnpOfgHX8lMw&s" class="playlist-image" alt="2015s MIX">
+                <div class="playlist-title">2015s MIX</div>
+                <div class="playlist-subtitle">Hits from the mid-2010s.</div>
+                <div class="playlist-fade"></div>
+               <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+        </div>
+        
+       
+        
+    </div>
+      
+ <script src="script.js"></script>   
+</body>
+</html>

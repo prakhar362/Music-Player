@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Vkd6uVaCfBQz2yhk3uF+Dy6B02bU1gR/+6WiJnmtBld6o/HUq4xfDdwe3L58JeyXrQ9FLkdpY3rcLQDixlJBPg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+    <!--SIDEBAR-->
+    <div id="orange-sidebar">
+        <div id="profile">
+            <img src="..\Lib\images\new2.jpg" alt="">
+        </div>
+        <div class="tags">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+                <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437"/>
+              </svg> <br>FEED</button>
+            <button><img src="https://cdn-icons-png.flaticon.com/512/5978/5978350.png" width="256" height="256" alt="Trending free icon" title="Trending free icon">Trending</button>
+            <button><svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90px" height="90px" viewBox="0 0 408.221 408.221" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M204.11,0C91.388,0,0,91.388,0,204.111c0,112.725,91.388,204.11,204.11,204.11c112.729,0,204.11-91.385,204.11-204.11 C408.221,91.388,316.839,0,204.11,0z M286.547,229.971l-126.368,72.471c-17.003,9.75-30.781,1.763-30.781-17.834V140.012 c0-19.602,13.777-27.575,30.781-17.827l126.368,72.466C303.551,204.403,303.551,220.217,286.547,229.971z"></path> </g> </g> </g></svg><br>PLAY</button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg><br>FAV</button>
+        <a href="..\Lib\index.html"> <button><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>Library</button></a>    
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="disc">
+           <img src="https://media2.giphy.com/media/LwBTamVefKJxmYwDba/giphy.gif" alt="Animated Disc Image"> 
+        </div>
+        
+        <div class="player">
+            
+            <div class="button-container">
+                <!-- Shuffle Icon -->
+            <button class="s1"><img src="https://img.icons8.com/ios/452/repeat.png" alt="Shuffle Icon" style="height: 24px; width: 24px; background-color: transparent;"></button> 
+                <!-- Previous Button -->
+            <button class="prev"><img src="https://img.icons8.com/ios/452/circled-left-2.png" alt="Previous Button" style="height: 24px; width: 24px; background-color: transparent;"></button> 
+                <!-- Play Button -->
+            <button class="pause"><img src="https://img.icons8.com/windows/452/play-button-circled.png" alt="Play Button" style="height: 24px; width: 24px; background-color: transparent;"></button> 
+                <!-- Next Button -->
+            <button class="next"><img src="https://img.icons8.com/ios/452/circled-right-2.png" alt="Next Button" style="height: 24px; width: 24px; background-color: transparent;"></button> 
+                <!-- Like Button -->
+            <button button class="s2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+            </svg></button> 
+            </div>
+            <div class="text">
+                <h2>SONG NAME</h2>
+                <p>ARTIST NAME ETC.</p>
+                <br> <br>
+                <progress class="progress-bar" max="100" value="0"></progress>
+            </div>
+        </div>
+        <div class="album">
+            <!-- Content for album -->
+            <img src="https://play-lh.googleusercontent.com/BRbpz0UfKgS3SqallbU3HE0Ka5bCJQ9EHHLPCZre0X2kKXITNLx3srqbtn8EYNLapYU" alt="">
+            <h2>Album Name</h2>
+            <h4>Release Date</h4>
+
+        </div>
+        <br>
+        <div class="other">
+            <!--Other albums-->
+            <h1>Made For You</h1>
+            <div class="library-body">   
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToOwB5SokhB5YegrF_3_B70PfFYH0CB3iAWQ&s" class="playlist-image" alt="PODCASTS">
+                <div class="playlist-title">PODCASTS</div>
+                <div class="playlist-subtitle">A variety of engaging podcasts.</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+            <div class="playlist-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYZSLzqwWGJAeUqCYipxgsEW5-p6JYKq6dw&s" class="playlist-image" alt="SPANISH">
+                <div class="playlist-title">SPANISH</div>
+                <div class="playlist-subtitle">Luis,Drake,Bad Bunny,Daddy Yankee</div>
+                <div class="playlist-fade"></div>
+                <a href="../play/play.html"><button class="play-button">▶</button></a>
+            </div>
+        </div>
+        </div>
+        <div class="up-next">
+            <!--Next Songs in the album-->
+            <h1>UP-NEXT</h1>
+            <h3 id="1">SONG1</h3>
+            <h3 id="2">SONG2</h3>
+            <h3 id="3">SONG3</h3>
+            <h3 id="4">SONG4</h3>
+        </div>
+    
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="play.js"></script>
+</body>
+</html>
