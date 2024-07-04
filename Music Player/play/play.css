@@ -103,92 +103,73 @@ html, body {
     margin-left: 5.5rem; /* Adjust for sidebar width */
     width: calc(100% - 5.5rem); /* Adjust width when sidebar is expanded */
 }
-
-.album, .player, .disc ,.up-next,.other{
-    width: 25%;
-    height: 300px; /* Adjust height as needed */
-    border-radius: 20px;
-    background-color: rgb(30, 42, 62);
-    border: 1px solid rgba(54, 69, 98, 0.18);
-    padding: 10px; /* Adjust padding */
-    background: linear-gradient(75deg, rgb(40, 58, 88) 0%, rgba(54, 69, 98, 0) 100%);
-    transition: all 0.2s ease;
-    cursor: pointer;
-    margin-top: 2.5%;
+.disc{
+    margin: 10px;
+    background-color: beige;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
-
-.disc {
-    margin-left: 10px; /* Adjust spacing between elements */
-    width: 21%;
-    height: 300px; /* Set height to match width to create a perfect circle */
-    padding: 0px;
-    border-radius: 50%; /* Make it a perfect circle */
-    overflow: hidden; /* Ensure content does not overflow */
-    position: relative; /* Ensure positioning within the container */
-}
-
-.disc img {
+.disc>img{
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image fills the container */
+    border-radius: 50%;
 }
-.player {
-    width: 40%; /* Adjust width as needed */
-    margin: 10px auto; /* Center align and provide margin */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.player{
+    margin: 10px;
+    background-color: #1E2A3E;
+    
+    height: 300px;
+    width: 600px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-}
+    justify-content: center;
 
-.text {
+}
+.player >.text{
+    color: beige;
     text-align: center;
     margin-top: 10px;
 }
-
 .progress-bar {
-    width: 110%; /* Full width of parent */
-    height: 10px; /* Adjust height as needed */
-    background-color: #f0f0f0; /* Light gray background */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow */
-    margin-top: 10px; /* Adjust margin as needed */
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 .progress {
-    width: 0%; /* Initial width of 0% */
-    height: 100%; /* Full height */
-    background-color: #0078d4; /* Windows blue progress color */
-    transition: width 0.3s ease-in-out; /* Smooth width transition */
+    width: 0%;
+    height: 100%;
+    background-color: #0078d4;
+    transition: width 0.3s ease-in-out;
 }
-
-
-
 
 .button-container {
     display: flex;
     gap: 10px;
     align-items: center;
-    position: absolute;
-    bottom: 440px; /* Adjust position from the bottom */
-    left: 0; /* Align to the left side */
-    right: 0; /* Align to the right side */
-    justify-content: center; /* Center buttons horizontally */
+    width: 100%;
+    margin-top: 50px;
 }
 
 .button-container button {
-    background-color: #1E2A3E;
+    background-color: #5b729a;
     border: none;
     color: white;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transition for background color change */
+    transition: background-color 0.3s ease;
 }
 
 .button-container button:hover {
-    background-color: white; /* Change background color on hover */
+    background-color: white;
 }
 
 .button-container button img,
@@ -199,43 +180,47 @@ html, body {
 
 .button-container button:hover img,
 .button-container button:hover svg {
-    fill: black; /* Change icon color on hover */
+    fill: black;
 }
+
 .button-container button.s2 {
-    background-color: white; /* Set initial background color for Like button */
-    color: red; /* Set initial icon color for Like button */
+    background-color: white;
+    color: red;
 }
 
 .button-container button.s2:hover {
-    background-color: white; /* Change background color of Like button on hover */
-    color: red; /* Change icon color of Like button on hover */
+    background-color: white;
+    color: red;
 }
-.text{
-    color: white;
-    text-align: center;
-}
+
 .album{
-    height: 325px;
-    align-items: center;
-    justify-content: center;
-    color: azure;
+    margin: 10px;
+    background-color: #f0f0f0;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    color: black;
+    border-radius: 20px;
 }
 .album>img{
+    margin-top: 5px;
     margin-left: 13px;
     margin-right: 13px;
     width: 280px;
     height: 220px;
-
+    border-radius: 18px;
 }
-.background>.up-next{
-    margin-left: 25%;
-    background-color:rgb(14, 167, 175);
-    color: antiquewhite;
+.album h2,h4{
+    text-align: center;
 }
 .background>.other{
-    width: 30%;
+    width: 35%;
+    height: 330px;
     justify-content: flex-start;
+    background-color: #0a3251;
     color: beige;
+    padding: 10px;
+    border-radius: 22px;
 }
 .library-body {
     width: 94%;
@@ -251,7 +236,7 @@ html, body {
     width: 35%;
     height: 35%;
     border-radius: 20px;
-    background-color: rgb(30, 42, 62);
+    background-color: white;
     border: 1px solid rgba(54, 69, 98, 0.18);
     padding: 1%;
     margin-bottom: 5.5%;
@@ -301,7 +286,7 @@ html, body {
   .playlist-title {
     font-weight: 800;
     font-size: 16px;
-    color: #c4d0e3;
+    color: beige;
     margin: 10px 0px 10px;
     display: -webkit-box;
     overflow: hidden;
@@ -337,3 +322,41 @@ html, body {
     padding: 8%;
     transition: 0.5s ease;
   }
+  .up-next{
+    margin-top: 0.5rem;
+    color: beige;
+    background-color: #b06d37;
+    width: 350px;
+    height: 320px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+.up-next h3 {
+        margin-top: 0.5rem;
+        color: white;
+        
+    }
+    @media (max-width: 480px) {
+        .background>.other{
+            width: 90%;
+            height: 330px;
+            justify-content: flex-start;
+            background-color: #0a3251;
+            color: beige;
+            padding: 10px;
+            border-radius: 22px;
+            
+        }
+        .album{
+            width: 91%;
+        }
+        .album>img{
+           width: 90%;
+        }
+        .up-next{
+            width: 91%;
+        }
+    }
