@@ -63,12 +63,31 @@ html, body {
   margin: 5px 0;
 }
 
+/* Hover effect: background turns white */
+#orange-sidebar .tags button:hover {
+  background-color: white;
+}
+
 .tags button svg, .tags button img {
   fill: #ffffff;
   width: 32px;
   height: 32px;
   margin-bottom: 5px;
 }
+/* Change the color of the SVG icons on hover */
+#orange-sidebar .tags button:not(#fav):hover svg {
+  fill: black; /* This will change the SVG icon color to black */
+}
+/* Change the color of the images inside buttons to black on hover */
+/* Change the color of the images inside buttons to black on hover, except for the trending button */
+#orange-sidebar .tags button:not(#trending):hover img {
+  filter: brightness(0) invert(1); /* This turns the image black for all buttons except #trending */
+}
+/* Prevent image color change for the trending button */
+#fav:hover svg{
+  fill:red;
+}
+
 
 .library-body {
   width: 94%;
