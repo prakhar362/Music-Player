@@ -38,23 +38,32 @@ document.addEventListener('DOMContentLoaded', function() {
     albumImageElem.src = albumImage;
     albumTitleElem.textContent = albumTitle;
     albumSubtitleElem.textContent = albumSubtitle;
-
+    
     let songs = [];
 
     if (albumTitle === "HINDI") {
         songs = [
-            { title: "Age", artist: "Artist 1", path: "../songs/HINDI/age.mp3" },
-            { title: "Groove", artist: "Artist 2", path: "../songs/HINDI/groove.mp3" },
-            { title: "Instrumental", artist: "Artist 3", path: "../songs/HINDI/instrumental.mp3" }
+            { title: "Mere Bina", artist: "Pritam", path: "../songs/HINDI/merebina.mp3" },
+            { title: "Sajda", artist: "Richa Sharma", path: "../songs/HINDI/sajda.mp3" },
+            { title: "Mitwa", artist: "Sonu Nigam", path: "../songs/HINDI/mitwa.mp3" },
+            { title: "zara", artist: "Bombay Jayshri", path: "../songs/HINDI/zara.mp3" },
+            { title: "Kabira", artist: "Arjit Singh", path: "../songs/HINDI/Kabira.mp3" },
+            { title: "Afreen", artist: "Rahat Fateh Ali", path: "../songs/HINDI/afreen.mp3" }
+           
         ];
     } else if (albumTitle === "NCS") {
         songs = [
+            { title: "Albatross", artist: "NCS", path: "../songs/NCS/albatross.mp3" },
             { title: "Cartoon", artist: "Artist 4", path: "../songs/NCS/Cartoon.mp3" },
             { title: "Mortals", artist: "Artist 5", path: "../songs/NCS/Mortals.mp3" },
-            { title: "Royalty", artist: "Artist 6", path: "../songs/NCS/Royalty.mp3" }
+            { title: "Royalty", artist: "Artist 6", path: "../songs/NCS/Royalty.mp3" },
+            { title: "Nostalgia", artist: "NCS", path: "../songs/NCS/Nostalgia.mp3" },
+            { title: "Steal", artist: "NCS", path: "../songs/NCS/steal.mp3" }
         ];
     } else if (albumTitle === "Party") {
         songs = [
+            { title: "JustTheWay", artist: "Artist 9", path: "../songs/Party/justtheway.mp3" },
+            { title: "Somebody", artist: "Artist 9", path: "../songs/Party/somebody.mp3" },
             { title: "Neki", artist: "Artist 7", path: "../songs/Party/neki.mp3" },
             { title: "Saanjh", artist: "Artist 8", path: "../songs/Party/saanjh.mp3" },
             { title: "Tere Sang", artist: "Artist 9", path: "../songs/Party/teresang.mp3" }
@@ -63,13 +72,24 @@ document.addEventListener('DOMContentLoaded', function() {
         songs = [
             { title: "Song 1", artist: "Artist 10", path: "../songs/POP/song1.mp3" },
             { title: "Song 2", artist: "Artist 11", path: "../songs/POP/song2.mp3" },
-            { title: "Song 3", artist: "Artist 12", path: "../songs/POP/song3.mp3" }
+            { title: "Song 3", artist: "Artist 12", path: "../songs/POP/song3.mp3" },
+            { title: "Song 4", artist: "Artist 12", path: "../songs/POP/song4.mp3" },
+            { title: "Kat", artist: "Artist 12", path: "../songs/POP/kat.mp3" }
         ];
     } else if (albumTitle === "PUNJABI") {
         songs = [
-            { title: "Song 1", artist: "Artist 13", path: "../songs/PUNJABI/kalinka.mp3" },
-            { title: "Song 2", artist: "Artist 14", path: "../songs/PUNJABI/life.mp3" },
-            { title: "Song 3", artist: "Artist 15", path: "../songs/PUNJABI/party.mp3" }
+            { title: "Kalinka", artist: "Artist 13", path: "../songs/PUNJABI/kalinka.mp3" },
+            { title: "Life", artist: "Artist 14", path: "../songs/PUNJABI/life.mp3" },
+            { title: "Party", artist: "Artist 15", path: "../songs/PUNJABI/party.mp3" },
+            { title: "Positive", artist: "Artist 15", path: "../songs/PUNJABI/positive.mp3" }
+        ];
+    }
+    else if (albumTitle === "2010s MIX") {
+        songs = [
+            { title: "Age", artist: "Artist 1", path: "../songs/HINDI/age.mp3" },
+    { title: "Groove", artist: "Artist 2", path: "../songs/HINDI/groove.mp3" },
+    { title: "Instrumental", artist: "Artist 3", path: "../songs/HINDI/instrumental.mp3" }
+           
         ];
     }
 
